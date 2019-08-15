@@ -1,0 +1,41 @@
+ArrayList<Integer> A = new ArrayList<Integer>();
+
+A.add(1);
+A.add(2);
+A.add(2);
+A.add(2);
+A.add(3);
+
+Iterator hi = (Iterator) A.iterator();
+While(hi.hasNext()){
+  System.out.println(hi.next());
+}
+
+
+--출력 결과 
+--1
+--2
+--2
+--2
+--3
+--List는 입력하는 값을 전부 담는다.
+
+
+
+HashSet<Integer> B = new HashSet<Integer>();
+B.add(1);
+B.add(2);
+B.add(2);
+B.add(2);
+B.add(3);
+
+Iterator hi = (Iterator) B.iterator();
+While(hi.hasNext()){
+  System.out.println(hi.next());
+}
+
+--출력 결과
+--1
+--2
+--3
+--Set의 경우에는 입력된 값 중 중복 값들을 제거하고 고유값들만 담는다.
